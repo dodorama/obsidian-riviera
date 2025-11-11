@@ -39,11 +39,16 @@ svg * {
 
 /*Riviera Variables*/
 
-.theme-dark,
 .theme-light {
 	--riviera-bg: rgba(207, 222, 194, 1);
 	--riviera-color: rgba(105, 128, 85, 1);
 	--riviera-color-strong: rgb(33, 52, 15, 1);
+}
+
+.theme-dark {
+	--riviera-bg: rgb(42 51 34);
+	--riviera-color: rgb(135 154 119);
+	--riviera-color-strong: rgba(207, 222, 194, 1);
 }
 
 body {
@@ -65,7 +70,7 @@ body {
 	--nav-item-background-hover: var(--riviera-bg);
 	--nav-item-background-active: var(--riviera-bg);
 	/*Icons*/
-	--icon-color: var(--riviera-color-strong);
+	--icon-color: var(--riviera-color);
 	/*tabs*/
 	--tab-background-active: var(--riviera-bg);
 	--tab-container-background: var(--riviera-bg);
