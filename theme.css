@@ -1,3 +1,5 @@
+/*Obsidian Template Theme CSS*/
+
 body {
 	--radius-s: 0px;
 	--radius-m: 0px;
@@ -40,15 +42,31 @@ svg * {
 /*Riviera Variables*/
 
 .theme-light {
-	--riviera-bg: rgba(207, 222, 194, 1);
-	--riviera-color: rgba(105, 128, 85, 1);
-	--riviera-color-strong: rgb(33, 52, 15, 1);
+	--riviera-bg: hsl(
+		var(--accent-h),
+		calc(var(--accent-s) * 1.5),
+		calc(var(--accent-l) * 2)
+	);
+	--riviera-color: var(--color-accent);
 }
 
+/*--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075));
+  --color-accent-2: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+  --background-secondary-alt: var(--color-base-05);*/
+
 .theme-dark {
-	--riviera-bg: rgb(42 51 34);
-	--riviera-color: rgb(135 154 119);
-	--riviera-color-strong: rgba(207, 222, 194, 1);
+	--riviera-bg: hsl(
+		var(--accent-h),
+		calc(var(--accent-s) * 1.5),
+		calc(var(--accent-l) / 2.3)
+	);
+	--riviera-color: hsl(
+		var(--accent-h),
+		calc(var(--accent-s) / 1.3),
+		calc(var(--accent-l) * 1.25)
+	);
 }
 
 body {
